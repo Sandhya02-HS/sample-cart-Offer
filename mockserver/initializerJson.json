@@ -1,15 +1,107 @@
 [
     {
-      "httpRequest" : {
-        "method" : "GET",
-        "path" : "/api/v1/user_segment",
-        "queryStringParameters" : {
-          "user_id" : ["1"]
-      }
+        "httpRequest": {
+            "method": "GET",
+            "path": "/api/v1/user_segment",
+            "queryStringParameters": {
+                "user_id": [
+                    "1"
+                ]
+            }
+        },
+        "httpResponse": {
+            "body": "{\"segment\": \"p2\"}",
+            "statusCode": 200
+        }
     },
-      "httpResponse" : {
-        "body" : "{\"segment\": \"p1\"}",
-        "statusCode": 200
-      }
+    {
+        "httpRequest": {
+            "method": "GET",
+            "path": "/api/v1/user_segment",
+            "queryStringParameters": {
+                "user_id": [
+                    "123456"
+                ]
+            }
+        },
+        "httpResponse": {
+            "body": "{\"segment\": \"p1\"}",
+            "statusCode": 200
+        }
+    },
+    {
+        "httpRequest": {
+            "method": "GET",
+            "path": "/api/v1/user_segment",
+            "queryStringParameters": {
+                "user_id": [
+                    "1234567"
+                ]
+            }
+        },
+        "httpResponse": {
+            "body": "{\"segment\": \"p2\"}",
+            "statusCode": 200
+        }
+    },
+    {
+        "httpRequest": {
+            "method": "GET",
+            "path": "/api/v1/user_segment",
+            "queryStringParameters": {
+                "user_id": [
+                    "12345678"
+                ]
+            }
+        },
+        "httpResponse": {
+            "body": "{\"segment\": \"p3\"}",
+            "statusCode": 200
+        }
+    },
+    {
+        "httpRequest": {
+            "method": "GET",
+            "path": "/api/v1/user_segment",
+            "queryStringParameters": {
+                "user_id": [
+                    "123456789"
+                ]
+            }
+        },
+        "httpResponse": {
+            "body": "{\"segment\": \"p2\"}",
+            "statusCode": 200
+        }
+    },
+    {
+        "httpRequest": {
+            "method": "GET",
+            "path": "/api/v1/user_segment",
+            "queryStringParameters": {
+                "user_id": [
+                    "12345679"
+                ]
+            }
+        },
+        "httpResponse": {
+            "body": "{\"segment\": \"p2\"}",
+            "statusCode": 200
+        }
+    },
+    {
+        "httpRequest": {
+            "method": "GET",
+            "path": "/api/v1/user_segment",
+            "queryStringParameters": {
+                "user_id": [
+                    "123456790"
+                ]
+            }
+        },
+        "httpResponse": {
+            "body": "{\"segment\": \"p3\"}",
+            "statusCode": 200
+        }
     }
-  ]
+]
